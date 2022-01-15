@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="daVinci Render Engine">
+      <UniqueIdentifier>{8ec8d7f9-2e9f-4dab-82fc-8150eb909ac2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="daVinci Render Engine\shaders">
+      <UniqueIdentifier>{ce41c06f-28cd-477c-8515-3b0a5a555719}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="daVinci Render Engine\Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="EinsteinGameEngine">
+      <UniqueIdentifier>{faa6d42b-57eb-4b88-a912-2983f716f7bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EinsteinEngineEditor">
+      <UniqueIdentifier>{b655ae50-47fb-4c1f-b0b4-5732d3f19160}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="daVinci Render Engine\Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="shader.frag">
+      <Filter>daVinci Render Engine\shaders</Filter>
+    </Text>
+    <Text Include="shader.vert">
+      <Filter>daVinci Render Engine\shaders</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="compile.bat">
+      <Filter>daVinci Render Engine\shaders</Filter>
+    </None>
+    <None Include="vert.spv">
+      <Filter>daVinci Render Engine\shaders</Filter>
+    </None>
+    <None Include="frag.spv">
+      <Filter>daVinci Render Engine\shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>daVinci Render Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dVRE_window.cpp">
+      <Filter>daVinci Render Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dVRE_main.cpp">
+      <Filter>daVinci Render Engine\Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dVRE_window.h">
+      <Filter>daVinci Render Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dVRE_main.h">
+      <Filter>daVinci Render Engine\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
