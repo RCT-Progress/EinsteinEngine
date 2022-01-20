@@ -23,40 +23,47 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="shader.frag">
-      <Filter>daVinci Render Engine\shaders</Filter>
-    </Text>
-    <Text Include="shader.vert">
-      <Filter>daVinci Render Engine\shaders</Filter>
-    </Text>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="compile.bat">
+    <None Include="daVinci Render Engine\shaders\shader.frag.spv">
       <Filter>daVinci Render Engine\shaders</Filter>
     </None>
-    <None Include="vert.spv">
+    <None Include="daVinci Render Engine\shaders\shader.vert.spv">
       <Filter>daVinci Render Engine\shaders</Filter>
     </None>
-    <None Include="frag.spv">
+    <None Include="daVinci Render Engine\shaders\shader.frag">
+      <Filter>daVinci Render Engine\shaders</Filter>
+    </None>
+    <None Include="daVinci Render Engine\shaders\shader.vert">
       <Filter>daVinci Render Engine\shaders</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="EEGameEngine\main.cpp">
       <Filter>daVinci Render Engine\Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="dVRE_window.cpp">
+    <ClCompile Include="daVinci Render Engine\dVRE_window.cpp">
       <Filter>daVinci Render Engine\Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="dVRE_main.cpp">
+    <ClCompile Include="daVinci Render Engine\dVRE_main.cpp">
+      <Filter>daVinci Render Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="daVinci Render Engine\dVRE_pipeline.cpp">
+      <Filter>daVinci Render Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="daVinci Render Engine\dVRE_device.cpp">
       <Filter>daVinci Render Engine\Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="dVRE_window.h">
+    <ClInclude Include="daVinci Render Engine\dVRE_window.h">
       <Filter>daVinci Render Engine\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="dVRE_main.h">
+    <ClInclude Include="daVinci Render Engine\dVRE_main.h">
+      <Filter>daVinci Render Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="daVinci Render Engine\dVRE_pipeline.h">
+      <Filter>daVinci Render Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="daVinci Render Engine\dVRE_device.h">
       <Filter>daVinci Render Engine\Header Files</Filter>
     </ClInclude>
   </ItemGroup>

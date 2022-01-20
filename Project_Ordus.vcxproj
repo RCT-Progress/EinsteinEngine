@@ -97,6 +97,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>C:\VulkanSDK\1.2.198.1\Lib;C:\Users\noobt\Documents\Libraries\glfw-3.3.6.bin.WIN64\lib-vc2019;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>vulkan-1.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>/NODEFAULTLIB:MSVCRT</IgnoreSpecificDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -117,6 +119,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>C:\VulkanSDK\1.2.198.1\Lib;C:\Users\noobt\Documents\Libraries\glfw-3.3.6.bin.WIN64\lib-vc2019;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>vulkan-1.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>/NODEFAULTLIB:MSVCRT</IgnoreSpecificDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -133,6 +137,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>C:\VulkanSDK\1.2.198.1\Lib;C:\Users\noobt\Documents\Libraries\glfw-3.3.6.bin.WIN64\lib-vc2019;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>vulkan-1.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>/NODEFAULTLIB:MSVCRT</IgnoreSpecificDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -153,25 +159,32 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>C:\VulkanSDK\1.2.198.1\Lib;C:\Users\noobt\Documents\Libraries\glfw-3.3.6.bin.WIN64\lib-vc2019;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>vulkan-1.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>/NODEFAULTLIB:MSVCRT</IgnoreSpecificDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="dVRE_main.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="dVRE_window.cpp" />
+    <ClCompile Include="daVinci Render Engine\dVRE_main.cpp" />
+    <ClCompile Include="daVinci Render Engine\dVRE_pipeline.cpp" />
+    <ClCompile Include="EEGameEngine\main.cpp" />
+    <ClCompile Include="daVinci Render Engine\dVRE_window.cpp" />
+    <ClCompile Include="daVinci Render Engine\dVRE_device.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="shader.frag" />
-    <Text Include="shader.vert" />
+    <None Include="daVinci Render Engine\shaders\shader.frag" />
+    <None Include="daVinci Render Engine\shaders\shader.frag.spv">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="daVinci Render Engine\shaders\shader.vert" />
+    <None Include="daVinci Render Engine\shaders\shader.vert.spv">
+      <FileType>Document</FileType>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="compile.bat" />
-    <None Include="frag.spv" />
-    <None Include="vert.spv" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="dVRE_main.h" />
-    <ClInclude Include="dVRE_window.h" />
+    <ClInclude Include="daVinci Render Engine\dVRE_main.h" />
+    <ClInclude Include="daVinci Render Engine\dVRE_pipeline.h" />
+    <ClInclude Include="daVinci Render Engine\dVRE_window.h" />
+    <ClInclude Include="daVinci Render Engine\dVRE_device.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
