@@ -37,7 +37,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="EEGameEngine\main.cpp">
+    <ClCompile Include="daVinci Render Engine\main.cpp">
       <Filter>daVinci Render Engine\Source Files</Filter>
     </ClCompile>
     <ClCompile Include="daVinci Render Engine\dVRE_window.cpp">
@@ -52,6 +52,9 @@
     <ClCompile Include="daVinci Render Engine\dVRE_device.cpp">
       <Filter>daVinci Render Engine\Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="daVinci Render Engine\dVRE_swapchain.cpp">
+      <Filter>daVinci Render Engine\Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="daVinci Render Engine\dVRE_window.h">
@@ -64,6 +67,9 @@
       <Filter>daVinci Render Engine\Header Files</Filter>
     </ClInclude>
     <ClInclude Include="daVinci Render Engine\dVRE_device.h">
+      <Filter>daVinci Render Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="daVinci Render Engine\dVRE_swapchain.h">
       <Filter>daVinci Render Engine\Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -8,7 +8,7 @@
 
 
 int main() {
-	dVRE::Main app{};
+	dVRE::MainApp app{};
 
 	try {
 		app.run();

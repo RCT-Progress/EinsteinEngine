@@ -98,7 +98,7 @@
       <AdditionalLibraryDirectories>C:\VulkanSDK\1.2.198.1\Lib;C:\Users\noobt\Documents\Libraries\glfw-3.3.6.bin.WIN64\lib-vc2019;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>vulkan-1.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
-      <IgnoreSpecificDefaultLibraries>/NODEFAULTLIB:MSVCRT</IgnoreSpecificDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>/NODEFAULTLIB:MSVCRT.lib</IgnoreSpecificDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -120,7 +120,7 @@
       <AdditionalLibraryDirectories>C:\VulkanSDK\1.2.198.1\Lib;C:\Users\noobt\Documents\Libraries\glfw-3.3.6.bin.WIN64\lib-vc2019;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>vulkan-1.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
-      <IgnoreSpecificDefaultLibraries>/NODEFAULTLIB:MSVCRT</IgnoreSpecificDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>/NODEFAULTLIB:MSVCRT.lib</IgnoreSpecificDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -138,7 +138,7 @@
       <AdditionalLibraryDirectories>C:\VulkanSDK\1.2.198.1\Lib;C:\Users\noobt\Documents\Libraries\glfw-3.3.6.bin.WIN64\lib-vc2019;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>vulkan-1.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
-      <IgnoreSpecificDefaultLibraries>/NODEFAULTLIB:MSVCRT</IgnoreSpecificDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>/NODEFAULTLIB:MSVCRT.lib</IgnoreSpecificDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -160,13 +160,14 @@
       <AdditionalLibraryDirectories>C:\VulkanSDK\1.2.198.1\Lib;C:\Users\noobt\Documents\Libraries\glfw-3.3.6.bin.WIN64\lib-vc2019;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>vulkan-1.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
-      <IgnoreSpecificDefaultLibraries>/NODEFAULTLIB:MSVCRT</IgnoreSpecificDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>/NODEFAULTLIB:MSVCRT.lib</IgnoreSpecificDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="daVinci Render Engine\dVRE_main.cpp" />
     <ClCompile Include="daVinci Render Engine\dVRE_pipeline.cpp" />
-    <ClCompile Include="EEGameEngine\main.cpp" />
+    <ClCompile Include="daVinci Render Engine\dVRE_swapchain.cpp" />
+    <ClCompile Include="daVinci Render Engine\main.cpp" />
     <ClCompile Include="daVinci Render Engine\dVRE_window.cpp" />
     <ClCompile Include="daVinci Render Engine\dVRE_device.cpp" />
   </ItemGroup>
@@ -183,6 +184,7 @@
   <ItemGroup>
     <ClInclude Include="daVinci Render Engine\dVRE_main.h" />
     <ClInclude Include="daVinci Render Engine\dVRE_pipeline.h" />
+    <ClInclude Include="daVinci Render Engine\dVRE_swapchain.h" />
     <ClInclude Include="daVinci Render Engine\dVRE_window.h" />
     <ClInclude Include="daVinci Render Engine\dVRE_device.h" />
   </ItemGroup>
