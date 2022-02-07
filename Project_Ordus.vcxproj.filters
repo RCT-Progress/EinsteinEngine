@@ -55,6 +55,9 @@
     <ClCompile Include="daVinci Render Engine\dVRE_swapchain.cpp">
       <Filter>daVinci Render Engine\Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="daVinci Render Engine\dVRE_model.cpp">
+      <Filter>daVinci Render Engine\Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="daVinci Render Engine\dVRE_window.h">
@@ -70,6 +73,9 @@
       <Filter>daVinci Render Engine\Header Files</Filter>
     </ClInclude>
     <ClInclude Include="daVinci Render Engine\dVRE_swapchain.h">
+      <Filter>daVinci Render Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="daVinci Render Engine\dVRE_model.h">
       <Filter>daVinci Render Engine\Header Files</Filter>
     </ClInclude>
   </ItemGroup>
