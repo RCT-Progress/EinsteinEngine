@@ -1,2 +1,2 @@
-C:\VulkanSDK\1.2.198.1\Bin\glslc.exe C:\Users\noobt\source\repos\EinsteinEngine\Project_Ordus\shaders\shader.vert -o C:\Users\noobt\source\repos\EinsteinEngine\Project_Ordus\shaders\shader.vert.spv
-C:\VulkanSDK\1.2.198.1\Bin\glslc.exe C:\Users\noobt\source\repos\EinsteinEngine\Project_Ordus\shaders\shader.frag -o C:\Users\noobt\source\repos\EinsteinEngine\Project_Ordus\shaders\shader.frag.spv
+C:\VulkanSDK\1.2.198.1\Bin\glslc.exe C:\Users\noobt\source\repos\EinsteinEngine\Project_Ordus\daVinci_Render_Engine\shaders\shader.vert -o C:\Users\noobt\source\repos\EinsteinEngine\Project_Ordus\daVinci_Render_Engine\shaders\shader.vert.spv
+C:\VulkanSDK\1.2.198.1\Bin\glslc.exe C:\Users\noobt\source\repos\EinsteinEngine\Project_Ordus\daVinci_Render_Engine\shaders\shader.frag -o C:\Users\noobt\source\repos\EinsteinEngine\Project_Ordus\daVinci_Render_Engine\shaders\shader.frag.spv

@@ -164,31 +164,31 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="daVinci Render Engine\dVRE_main.cpp" />
-    <ClCompile Include="daVinci Render Engine\dVRE_model.cpp" />
-    <ClCompile Include="daVinci Render Engine\dVRE_pipeline.cpp" />
-    <ClCompile Include="daVinci Render Engine\dVRE_swapchain.cpp" />
-    <ClCompile Include="daVinci Render Engine\main.cpp" />
-    <ClCompile Include="daVinci Render Engine\dVRE_window.cpp" />
-    <ClCompile Include="daVinci Render Engine\dVRE_device.cpp" />
+    <ClCompile Include="daVinci_Render_Engine\dVRE_main.cpp" />
+    <ClCompile Include="daVinci_Render_Engine\dVRE_model.cpp" />
+    <ClCompile Include="daVinci_Render_Engine\dVRE_pipeline.cpp" />
+    <ClCompile Include="daVinci_Render_Engine\dVRE_swapchain.cpp" />
+    <ClCompile Include="daVinci_Render_Engine\main.cpp" />
+    <ClCompile Include="daVinci_Render_Engine\dVRE_window.cpp" />
+    <ClCompile Include="daVinci_Render_Engine\dVRE_device.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="daVinci Render Engine\shaders\shader.frag" />
-    <None Include="daVinci Render Engine\shaders\shader.frag.spv">
+    <None Include="daVinci_Render_Engine\shaders\shader.frag" />
+    <None Include="daVinci_Render_Engine\shaders\shader.frag.spv">
       <FileType>Document</FileType>
     </None>
-    <None Include="daVinci Render Engine\shaders\shader.vert" />
-    <None Include="daVinci Render Engine\shaders\shader.vert.spv">
+    <None Include="daVinci_Render_Engine\shaders\shader.vert" />
+    <None Include="daVinci_Render_Engine\shaders\shader.vert.spv">
       <FileType>Document</FileType>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="daVinci Render Engine\dVRE_main.h" />
-    <ClInclude Include="daVinci Render Engine\dVRE_model.h" />
-    <ClInclude Include="daVinci Render Engine\dVRE_pipeline.h" />
-    <ClInclude Include="daVinci Render Engine\dVRE_swapchain.h" />
-    <ClInclude Include="daVinci Render Engine\dVRE_window.h" />
-    <ClInclude Include="daVinci Render Engine\dVRE_device.h" />
+    <ClInclude Include="daVinci_Render_Engine\dVRE_main.h" />
+    <ClInclude Include="daVinci_Render_Engine\dVRE_model.h" />
+    <ClInclude Include="daVinci_Render_Engine\dVRE_pipeline.h" />
+    <ClInclude Include="daVinci_Render_Engine\dVRE_swapchain.h" />
+    <ClInclude Include="daVinci_Render_Engine\dVRE_window.h" />
+    <ClInclude Include="daVinci_Render_Engine\dVRE_device.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

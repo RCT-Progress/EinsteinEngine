@@ -7,6 +7,7 @@
 namespace dVRE {
 
 	MainApp::MainApp() {
+		loadModels();
 		createPipelineLayout();
 		createPipeline();
 		createCommandBuffers();
@@ -23,6 +24,15 @@ namespace dVRE {
 			glfwPollEvents();
 			drawFrame();
 		}
+		vkDeviceWaitIdle(dvreDevice.device());
+	}
+
+	void MainApp::loadModels() {
+		std::vector<dVREmodel::Vertex> vertices{
+			{{0.0f, -0.5f}}, 
+			{{0.5f, 0.5f}}, 
+			{{-0.5f, 0.5f}}};
+		dvreModel = std::make_unique<dVREmodel>(dvreDevice, vertices);
 	}
 
 	void MainApp::createPipelineLayout() {
@@ -44,7 +54,7 @@ namespace dVRE {
 		dVREpipeline::defaultPipelineConfigInfo(pipelineConfig, dvreSwapchain.width(), dvreSwapchain.height());
 		pipelineConfig.renderPass = dvreSwapchain.getRenderPass();
 		pipelineConfig.pipelineLayout = pipelineLayout;
-		dvrePipeline = std::make_unique<dVREpipeline>(dvreDevice, "daVinci Render Engine/shaders/shader.vert.spv", "daVinci Render Engine/shaders/shader.frag.spv", pipelineConfig);
+		dvrePipeline = std::make_unique<dVREpipeline>(dvreDevice, "daVinci_Render_Engine/shaders/shader.vert.spv", "daVinci_Render_Engine/shaders/shader.frag.spv", pipelineConfig);
 	}
 
 	void MainApp::createCommandBuffers(){
