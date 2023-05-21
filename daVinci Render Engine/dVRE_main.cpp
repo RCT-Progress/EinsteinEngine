@@ -28,9 +28,9 @@ namespace dVRE {
 
 	void MainApp::loadmodels() {
 		std::vector<dVREmodel::Vertex> vertices{
-			{{0.0f, -0.5f}},
-			{{0.5f, 0.5f}},
-			{{-0.5f, 0.5f}}
+			{{0.0f, -0.5f}, {1.0f, 0.0f, 0.0f}},
+			{{0.5f, 0.5f}, {0.0f, 1.0f, 0.0f}},
+			{{-0.5f, 0.5f}, {0.0f, 0.0f, 1.0f}}
 		};
 
 		dVREModel = std::make_unique<dVREmodel>(dvreDevice, vertices);
