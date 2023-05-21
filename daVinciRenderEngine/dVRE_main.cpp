@@ -55,7 +55,7 @@ namespace dVRE {
 		dVREpipeline::defaultPipelineConfigInfo(pipelineConfig, dvreSwapchain.width(), dvreSwapchain.height());
 		pipelineConfig.renderPass = dvreSwapchain.getRenderPass();
 		pipelineConfig.pipelineLayout = pipelineLayout;
-		dvrePipeline = std::make_unique<dVREpipeline>(dvreDevice, "daVinci Render Engine/shaders/shader.vert.spv", "daVinci Render Engine/shaders/shader.frag.spv", pipelineConfig);
+		dvrePipeline = std::make_unique<dVREpipeline>(dvreDevice, "daVinciRenderEngine/shaders/shader.vert.spv", "daVinciRenderEngine/shaders/shader.frag.spv", pipelineConfig);
 	}
 
 	void MainApp::createCommandBuffers(){
