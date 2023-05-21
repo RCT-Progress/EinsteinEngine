@@ -4,6 +4,7 @@
 #include "dVRE_pipeline.h"
 #include "dVRE_device.h"
 #include "dVRE_swapchain.h"
+#include "dVRE_model.h"
 
 //std lib
 #include <memory>
@@ -24,6 +25,7 @@ namespace dVRE {
 			void run();
 
 		private:
+			void loadmodels();
 			void createPipelineLayout();
 			void createPipeline();
 			void createCommandBuffers();
@@ -35,5 +37,6 @@ namespace dVRE {
 			std::unique_ptr<dVREpipeline> dvrePipeline;
 			VkPipelineLayout pipelineLayout;
 			std::vector<VkCommandBuffer> commandBuffers;
+			std::unique_ptr<dVREmodel> dVREModel;
 	};
 }//namespace dVRE

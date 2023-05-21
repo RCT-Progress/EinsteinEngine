@@ -7,6 +7,7 @@
 namespace dVRE {
 
 	MainApp::MainApp() {
+		loadmodels();
 		createPipelineLayout();
 		createPipeline();
 		createCommandBuffers();
@@ -23,6 +24,16 @@ namespace dVRE {
 			glfwPollEvents();
 			drawFrame();
 		}
+	}
+
+	void MainApp::loadmodels() {
+		std::vector<dVREmodel::Vertex> vertices{
+			{{0.0f, -0.5f}},
+			{{0.5f, 0.5f}},
+			{{-0.5f, 0.5f}}
+		};
+
+		dVREModel = std::make_unique<dVREmodel>(dvreDevice, vertices);
 	}
 
 	void MainApp::createPipelineLayout() {
@@ -86,7 +97,8 @@ namespace dVRE {
 			vkCmdBeginRenderPass(commandBuffers[i], &renderPassInfo, VK_SUBPASS_CONTENTS_INLINE);
 
 			dvrePipeline->bind(commandBuffers[i]);
-			vkCmdDraw(commandBuffers[i], 3, 1, 0, 0);
+			dVREModel->bind(commandBuffers[i]);
+			dVREModel->draw(commandBuffers[i]);
 
 			vkCmdEndRenderPass(commandBuffers[i]);
 			if (vkEndCommandBuffer(commandBuffers[i]) != VK_SUCCESS) {
