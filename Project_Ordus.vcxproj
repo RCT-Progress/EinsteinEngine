@@ -80,6 +80,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>C:\Users\noobt\source\repos\EinsteinEngine\Project_Ordus\daVinciRenderEngine;$(IncludePath)</IncludePath>
+    <SourcePath>C:\Users\noobt\source\repos\EinsteinEngine\Project_Ordus\daVinciRenderEngine;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -175,7 +176,10 @@
     <ClCompile Include="daVinciRenderEngine\dVRE_device.cpp" />
     <ClCompile Include="daVinciRenderEngine\dVRE_main.cpp" />
     <ClCompile Include="daVinciRenderEngine\dVRE_model.cpp" />
-    <ClCompile Include="daVinciRenderEngine\dVRE_pipeline.cpp" />
+    <ClCompile Include="daVinciRenderEngine\dVRE_pipeline.cpp">
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</DeploymentContent>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\noobt\source\repos\EinsteinEngine\Project_Ordus\daVinciRenderEngine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="daVinciRenderEngine\dVRE_swapchain.cpp" />
     <ClCompile Include="daVinciRenderEngine\dVRE_window.cpp" />
     <ClCompile Include="daVinciRenderEngine\main.cpp" />
