@@ -23,18 +23,21 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="daVinci Render Engine\shaders\shader.frag.spv">
-      <Filter>daVinci Render Engine\shaders</Filter>
-    </None>
-    <None Include="daVinci Render Engine\shaders\shader.vert.spv">
-      <Filter>daVinci Render Engine\shaders</Filter>
-    </None>
     <None Include="daVinci Render Engine\shaders\shader.frag">
       <Filter>daVinci Render Engine\shaders</Filter>
     </None>
     <None Include="daVinci Render Engine\shaders\shader.vert">
       <Filter>daVinci Render Engine\shaders</Filter>
     </None>
+    <None Include="compile.bat">
+      <Filter>daVinci Render Engine\Source Files</Filter>
+    </None>
+    <None Include="daVinciRenderEngine\shaders\shader.frag" />
+    <None Include="daVinciRenderEngine\shaders\shader.frag.spv" />
+    <None Include="daVinciRenderEngine\shaders\shader.vert" />
+    <None Include="daVinciRenderEngine\shaders\shader.vert.spv" />
+    <None Include=".gitattributes" />
+    <None Include=".gitignore" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="daVinci Render Engine\main.cpp">
@@ -58,6 +61,27 @@
     <ClCompile Include="daVinci Render Engine\dVRE_model.cpp">
       <Filter>daVinci Render Engine\Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="daVinciRenderEngine\dVRE_device.cpp">
+      <Filter>daVinci Render Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="daVinciRenderEngine\dVRE_main.cpp">
+      <Filter>daVinci Render Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="daVinciRenderEngine\dVRE_model.cpp">
+      <Filter>daVinci Render Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="daVinciRenderEngine\dVRE_pipeline.cpp">
+      <Filter>daVinci Render Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="daVinciRenderEngine\dVRE_swapchain.cpp">
+      <Filter>daVinci Render Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="daVinciRenderEngine\dVRE_window.cpp">
+      <Filter>daVinci Render Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="daVinciRenderEngine\main.cpp">
+      <Filter>daVinci Render Engine\Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="daVinci Render Engine\dVRE_window.h">
@@ -76,6 +100,24 @@
       <Filter>daVinci Render Engine\Header Files</Filter>
     </ClInclude>
     <ClInclude Include="daVinci Render Engine\dVRE_model.h">
+      <Filter>daVinci Render Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="daVinciRenderEngine\dVRE_device.h">
+      <Filter>daVinci Render Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="daVinciRenderEngine\dVRE_main.h">
+      <Filter>daVinci Render Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="daVinciRenderEngine\dVRE_model.h">
+      <Filter>daVinci Render Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="daVinciRenderEngine\dVRE_pipeline.h">
+      <Filter>daVinci Render Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="daVinciRenderEngine\dVRE_swapchain.h">
+      <Filter>daVinci Render Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="daVinciRenderEngine\dVRE_window.h">
       <Filter>daVinci Render Engine\Header Files</Filter>
     </ClInclude>
   </ItemGroup>
